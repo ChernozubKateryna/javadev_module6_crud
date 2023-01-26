@@ -24,7 +24,7 @@ public class App {
         List<Client> clientListWithNewClient = clientService.listAll();
         System.out.println("clientList = " + clientListWithNewClient);
 
-        clientService.setName(6, "Avtory2.0");
+        clientService.setName(6, "Update name");
 
         List<Client> clientListWithUpdateLastClient = clientService.listAll();
         System.out.println("clientList = " + clientListWithUpdateLastClient);

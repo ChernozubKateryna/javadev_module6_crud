@@ -10,7 +10,6 @@ public class ClientService {
     private PreparedStatement setNameSt;
     private PreparedStatement deleteByIdSt;
     private PreparedStatement getAllSt;
-    private PreparedStatement selectMaxIdSt;
 
     public ClientService(Connection connection) throws SQLException {
         createSt = connection.prepareStatement(
@@ -20,10 +19,6 @@ public class ClientService {
 
         getByIdSt = connection.prepareStatement(
                 "SELECT name FROM client WHERE id = ?"
-        );
-
-        selectMaxIdSt = connection.prepareStatement(
-                "SELECT max(id) AS maxId FROM client"
         );
 
         setNameSt = connection.prepareStatement(
@@ -52,9 +47,12 @@ public class ClientService {
 
         long id;
 
-        try(ResultSet rs = selectMaxIdSt.executeQuery()) {
-            rs.next();
-            id = rs.getLong("maxId");
+        try (ResultSet generatedKeys = createSt.getGeneratedKeys()) {
+            if (generatedKeys.next()) {
+                id = generatedKeys.getLong("id");
+            } else {
+                throw new SQLException("Invalid value 'id' entered.");
+            }
         }
 
         return id;
@@ -84,8 +82,8 @@ public class ClientService {
             throw new IllegalArgumentException("Name too long.");
         }
 
-        setNameSt.setLong(1, id);
-        setNameSt.setString(2, name);
+        setNameSt.setString(1, name);
+        setNameSt.setLong(2, id);
 
         setNameSt.executeUpdate();
     }

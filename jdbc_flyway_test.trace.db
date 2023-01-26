@@ -1,0 +1,990 @@
+2023-01-25 04:29:19 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.engine.Database.<init>(Database.java:297)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at com.goit.feature.database.Database.<init>(Database.java:18)
+	at com.goit.feature.database.Database.<clinit>(Database.java:10)
+	at App.main(App.java:6)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 14 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 12 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 18 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:602)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 19 more
+2023-01-25 04:29:19 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at com.goit.feature.database.Database.<init>(Database.java:18)
+	at com.goit.feature.database.Database.<clinit>(Database.java:10)
+	at App.main(App.java:6)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 19 more
+2023-01-25 04:29:19 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:75)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:146)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129)
+	at com.goit.feature.database.DatabaseInitService.initDb(DatabaseInitService.java:15)
+	at App.main(App.java:8)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 18 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 16 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 22 more
+2023-01-25 04:29:20 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.openConnection(JdbcConnectionFactory.java:106)
+	at org.flywaydb.core.internal.database.base.Database.getMigrationConnection(Database.java:293)
+	at org.flywaydb.core.internal.command.DbMigrate.<init>(DbMigrate.java:72)
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:177)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129)
+	at com.goit.feature.database.DatabaseInitService.initDb(DatabaseInitService.java:15)
+	at App.main(App.java:8)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 21 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 19 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 25 more
+2023-01-26 13:33:03 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.engine.Database.<init>(Database.java:297)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at com.goit.feature.database.Database.<init>(Database.java:18)
+	at com.goit.feature.database.Database.<clinit>(Database.java:10)
+	at App.main(App.java:11)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 14 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 12 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 18 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:602)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 19 more
+2023-01-26 13:33:03 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at com.goit.feature.database.Database.<init>(Database.java:18)
+	at com.goit.feature.database.Database.<clinit>(Database.java:10)
+	at App.main(App.java:11)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 19 more
+2023-01-26 13:33:04 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:75)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:146)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129)
+	at com.goit.feature.database.DatabaseInitService.initDb(DatabaseInitService.java:15)
+	at App.main(App.java:13)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 18 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 16 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 22 more
+2023-01-26 13:33:04 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.openConnection(JdbcConnectionFactory.java:106)
+	at org.flywaydb.core.internal.database.base.Database.getMigrationConnection(Database.java:293)
+	at org.flywaydb.core.internal.command.DbMigrate.<init>(DbMigrate.java:72)
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:177)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129)
+	at com.goit.feature.database.DatabaseInitService.initDb(DatabaseInitService.java:15)
+	at App.main(App.java:13)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 21 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 19 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 25 more
+2023-01-26 13:34:17 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.engine.Database.<init>(Database.java:297)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at com.goit.feature.database.Database.<init>(Database.java:18)
+	at com.goit.feature.database.Database.<clinit>(Database.java:10)
+	at App.main(App.java:11)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 14 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 12 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 18 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:602)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 19 more
+2023-01-26 13:34:17 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at com.goit.feature.database.Database.<init>(Database.java:18)
+	at com.goit.feature.database.Database.<clinit>(Database.java:10)
+	at App.main(App.java:11)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 19 more
+2023-01-26 13:34:18 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:75)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:146)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129)
+	at com.goit.feature.database.DatabaseInitService.initDb(DatabaseInitService.java:15)
+	at App.main(App.java:13)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 18 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 16 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 22 more
+2023-01-26 13:34:18 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.openConnection(JdbcConnectionFactory.java:106)
+	at org.flywaydb.core.internal.database.base.Database.getMigrationConnection(Database.java:293)
+	at org.flywaydb.core.internal.command.DbMigrate.<init>(DbMigrate.java:72)
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:177)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129)
+	at com.goit.feature.database.DatabaseInitService.initDb(DatabaseInitService.java:15)
+	at App.main(App.java:13)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 21 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 19 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 25 more
+2023-01-26 13:35:42 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.engine.Database.<init>(Database.java:297)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at com.goit.feature.database.Database.<init>(Database.java:18)
+	at com.goit.feature.database.Database.<clinit>(Database.java:10)
+	at App.main(App.java:11)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 14 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 12 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 18 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:602)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 19 more
+2023-01-26 13:35:42 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at com.goit.feature.database.Database.<init>(Database.java:18)
+	at com.goit.feature.database.Database.<clinit>(Database.java:10)
+	at App.main(App.java:11)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 19 more
+2023-01-26 13:35:42 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:75)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:146)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129)
+	at com.goit.feature.database.DatabaseInitService.initDb(DatabaseInitService.java:15)
+	at App.main(App.java:13)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 18 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 16 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 22 more
+2023-01-26 13:35:42 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.openConnection(JdbcConnectionFactory.java:106)
+	at org.flywaydb.core.internal.database.base.Database.getMigrationConnection(Database.java:293)
+	at org.flywaydb.core.internal.command.DbMigrate.<init>(DbMigrate.java:72)
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:177)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129)
+	at com.goit.feature.database.DatabaseInitService.initDb(DatabaseInitService.java:15)
+	at App.main(App.java:13)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 21 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 19 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 25 more
+2023-01-26 13:40:34 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.engine.Database.<init>(Database.java:297)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at com.goit.feature.database.Database.<init>(Database.java:18)
+	at com.goit.feature.database.Database.<clinit>(Database.java:10)
+	at App.main(App.java:11)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 14 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 12 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 18 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:602)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 19 more
+2023-01-26 13:40:34 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at com.goit.feature.database.Database.<init>(Database.java:18)
+	at com.goit.feature.database.Database.<clinit>(Database.java:10)
+	at App.main(App.java:11)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 19 more
+2023-01-26 13:40:34 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:75)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:146)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129)
+	at com.goit.feature.database.DatabaseInitService.initDb(DatabaseInitService.java:15)
+	at App.main(App.java:13)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 18 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 16 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 22 more
+2023-01-26 13:40:34 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.openConnection(JdbcConnectionFactory.java:106)
+	at org.flywaydb.core.internal.database.base.Database.getMigrationConnection(Database.java:293)
+	at org.flywaydb.core.internal.command.DbMigrate.<init>(DbMigrate.java:72)
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:177)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129)
+	at com.goit.feature.database.DatabaseInitService.initDb(DatabaseInitService.java:15)
+	at App.main(App.java:13)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 21 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 19 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 25 more
+2023-01-26 13:45:37 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.engine.Database.<init>(Database.java:297)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at com.goit.feature.database.Database.<init>(Database.java:18)
+	at com.goit.feature.database.Database.<clinit>(Database.java:10)
+	at App.main(App.java:11)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 14 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 12 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 18 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:602)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 19 more
+2023-01-26 13:45:37 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at com.goit.feature.database.Database.<init>(Database.java:18)
+	at com.goit.feature.database.Database.<clinit>(Database.java:10)
+	at App.main(App.java:11)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 19 more
+2023-01-26 13:45:37 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:75)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:146)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129)
+	at com.goit.feature.database.DatabaseInitService.initDb(DatabaseInitService.java:15)
+	at App.main(App.java:13)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 18 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 16 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 22 more
+2023-01-26 13:45:38 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.openConnection(JdbcConnectionFactory.java:106)
+	at org.flywaydb.core.internal.database.base.Database.getMigrationConnection(Database.java:293)
+	at org.flywaydb.core.internal.command.DbMigrate.<init>(DbMigrate.java:72)
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:177)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129)
+	at com.goit.feature.database.DatabaseInitService.initDb(DatabaseInitService.java:15)
+	at App.main(App.java:13)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 21 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 19 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 25 more
+2023-01-26 13:50:16 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.engine.Database.<init>(Database.java:297)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at com.goit.feature.database.Database.<init>(Database.java:18)
+	at com.goit.feature.database.Database.<clinit>(Database.java:10)
+	at App.main(App.java:11)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 14 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 12 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 18 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:602)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 19 more
+2023-01-26 13:50:16 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:251)
+	at com.goit.feature.database.Database.<init>(Database.java:18)
+	at com.goit.feature.database.Database.<clinit>(Database.java:10)
+	at App.main(App.java:11)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 19 more
+2023-01-26 13:50:16 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:75)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:146)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129)
+	at com.goit.feature.database.DatabaseInitService.initDb(DatabaseInitService.java:15)
+	at App.main(App.java:13)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 18 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 16 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 22 more
+2023-01-26 13:50:16 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:199)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.engine.Engine.openSession(Engine.java:258)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnectionFromDriver(DriverDataSource.java:258)
+	at org.flywaydb.core.internal.jdbc.DriverDataSource.getConnection(DriverDataSource.java:223)
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48)
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.openConnection(JdbcConnectionFactory.java:106)
+	at org.flywaydb.core.internal.database.base.Database.getMigrationConnection(Database.java:293)
+	at org.flywaydb.core.internal.command.DbMigrate.<init>(DbMigrate.java:72)
+	at org.flywaydb.core.Flyway.lambda$migrate$0(Flyway.java:177)
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:204)
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:129)
+	at com.goit.feature.database.DatabaseInitService.initDb(DatabaseInitService.java:15)
+	at App.main(App.java:13)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" not found [90086-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 21 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:197)
+	... 19 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	... 25 more
+2023-01-26 13:50:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Avtory2.0"; SQL statement:
+UPDATE client SET name = ? WHERE id = ? [22018-214]

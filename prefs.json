@@ -1,0 +1,3 @@
+{
+  "dbUrl": "jdbc:h2:./jdbc_flyway_test;TRACE_LEVEL_FILE=4"
+}
